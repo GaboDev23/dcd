@@ -16,7 +16,7 @@
             </label>
             <ul>
                 <li><a href="#apis">Apis</a></li>
-                <li><a href="#">Información del navegador</a></li>
+                <li><a href="#info__navegador">Información del navegador</a></li>
                 <li><a href="#">geolocalización</a></li>
                 <li><a href="#">Permisos</a></li>
             </ul>
@@ -69,10 +69,38 @@
                     </li>
                 </ul>
 
-                <button class="comprobar" id="comprobar">COMPROBAR</button>
+                <button class="comprobar" id="comprobar_apis">COMPROBAR</button>
             </div>
         </div>
-        <div class="info__navegador"></div>
+        <div class="info__navegador" id="info__navegador">
+            <h2>Información del Navegador</h2>
+
+            <p>
+                A continuación, se muestra información detallada sobre tu navegador y dispositivo. 
+                Esta información es útil para saber qué características y funcionalidades son compatibles con tu entorno digital.
+            </p>
+
+            <p>
+                Precaución: Puede que la información no sea 100% precisa.
+            </p>
+
+            <div class="info__container">
+                <div class="info__item">
+                    <span class="info__label">Código del Navegador: </span>
+                    <span class="info__value" id="codigo__navegador"></span>
+                </div>
+                <div class="info__item">
+                    <span class="info__label">Nombre del Navegador: </span>
+                    <span class="info__value" id="nombre__navagador"></span>
+                </div>
+                <div class="info__item">
+                    <span class="info__label">Versión del Navegador: </span>
+                    <span class="info__value" id="version__navegador"></span>
+                </div>
+
+                <button class="comprobar" id="comprobar__navegador">COMPROBAR</button>
+            </div>
+        </div>
         <div class="geolocalizacion"></div>
         <div class="permisos"></div>
     </main>

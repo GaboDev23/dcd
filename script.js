@@ -2,7 +2,11 @@
 
 const apiName = document.querySelectorAll('.api-name');
 const apiStatus = document.querySelectorAll('.api-status');
-const comprobar = document.getElementById('comprobar');
+const comprobarLasApis = document.getElementById('comprobar_apis');
+const codigoNavegador = document.getElementById('codigo__navegador');
+const nombreNavegador = document.getElementById('nombre__navagador');
+const versionNavegador = document.getElementById('version__navegador');
+const comprobarNavegador = document.getElementById('comprobar__navegador');
 
 const comprobarApis = async () => {
     const apiInfo = await fetch('apis.txt');
@@ -11,7 +15,7 @@ const comprobarApis = async () => {
     return apis;
 }
 
-comprobar.addEventListener('click', () => {
+comprobarLasApis.addEventListener('click', () => {
     comprobarApis()
         .then(apis => {
             let cont = 0;
@@ -26,4 +30,10 @@ comprobar.addEventListener('click', () => {
                 cont++;
             }
     });
+});
+
+comprobarNavegador.addEventListener('click', () => {
+    codigoNavegador.innerHTML = navigator.appCodeName;
+    nombreNavegador.innerHTML = navigator.appName;
+    versionNavegador.innerHTML = navigator.appVersion;
 });
