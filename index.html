@@ -15,19 +15,19 @@
                 <div class="toggle"></div>
             </label>
             <ul>
-                <li><a href="#">Apis</a></li>
+                <li><a href="#apis">Apis</a></li>
                 <li><a href="#">Información del navegador</a></li>
                 <li><a href="#">geolocalización</a></li>
                 <li><a href="#">Permisos</a></li>
             </ul>
         </nav>
     </header>
-    <main class="principal">
+    <main class="principal" id="inicio">
         <div class="sec__principal">
             <div class="fondo">
                 <video src="video_fondo.mp4" class="video__fondo" autoplay loop></video>
                 <div class="contenido">
-                    <h2>Bienvenido a <span style="color: #007BFF;">Detector de Dispositivo</span></h2>
+                    <h2>Bienvenido a <span style="color: #000000;">Detector de Compatibilidades del Dispositivo</span></h2>
                     <p>
                         Esta herramienta está diseñada para ayudarte a entender las capacidades de tu navegador y dispositivo en tiempo real. 
                         Desde la compatibilidad con diferentes características hasta el estado de tu conexión, 
@@ -37,11 +37,41 @@
                         ¿Quieres saber si tu dispositivo soporta características como geolocalización, acceso a la cámara o detección de red? 
                         ¡Estamos aquí para responderte!
                     </p>
-                    <button class="start__detection">Comenzar detección</button>
+                    <a href="#apis" class="start__detection">Comenzar detección</a>
                 </div>
             </div>
         </div>
-        <div class="apis"></div>
+        <div class="apis" id="apis">
+            <div class="apis__container">
+                <h2>Compatibilidad de APIs</h2>
+
+                <p>
+                    A continuación, se muestra una lista de las APIs más comunes y su compatibilidad con tu navegador y dispositivo. 
+                    Si alguna de las APIs no es compatible, te recomendamos que actualices tu navegador o dispositivo para disfrutar de todas las funciones.
+                </p>
+
+                <ul class="apis__list">
+                    <li class="api__item">
+                        <span class="api-name"></span>
+                        <span class="api-status"></span>
+                    </li>
+                    <li class="api__item">
+                        <span class="api-name"></span>
+                        <span class="api-status"></span>
+                    </li>
+                    <li class="api__item">
+                        <span class="api-name"></span>
+                        <span class="api-status"></span>
+                    </li>
+                    <li class="api__item">
+                        <span class="api-name"></span>
+                        <span class="api-status"></span>
+                    </li>
+                </ul>
+
+                <button class="comprobar" id="comprobar">COMPROBAR</button>
+            </div>
+        </div>
         <div class="info__navegador"></div>
         <div class="geolocalizacion"></div>
         <div class="permisos"></div>

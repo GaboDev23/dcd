@@ -1,0 +1,18 @@
+[
+    {
+        "api_Name": "Geolocation",
+        "object": "navigator.geolocation"
+    },
+    {
+        "api_Name": "Meda Devices",
+        "object": "navigator.mediaDevices"
+    },
+    {
+        "api_Name": "Service Worker",
+        "object": "navigator.serviceWorker"
+    },
+    {
+        "api_Name": "Storage",
+        "object": "navigator.storage"
+    }
+]
