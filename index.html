@@ -101,11 +101,28 @@
                 <button class="comprobar" id="comprobar__navegador">COMPROBAR</button>
             </div>
         </div>
-        <div class="geolocalizacion"></div>
+        <div class="geolocalizacion">
+            <h2>Geolocalización</h2>
+
+            <p>
+                La geolocalización es una característica que permite a los sitios web acceder a la ubicación física de un dispositivo. 
+                Esta información es útil para proporcionar servicios basados en la ubicación, como mapas, direcciones y recomendaciones locales.
+            </p>
+
+            <p>
+                Haz click en comprobar para localizar tu ubicación
+            </p>
+
+            <div class="map" id="map"></div>
+
+            <button class="comprobar" id="comprobar__geolocalizacion">COMPROBAR</button>
+        </div>
         <div class="permisos"></div>
     </main>
     <footer class="pie"></footer>
     
-    <script src="script.js"></script>
+    <script async src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+
 </body>
 </html>
